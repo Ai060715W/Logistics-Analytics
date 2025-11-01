@@ -46,3 +46,29 @@ logistics-analytics/
 ├── main.py
 └── README.md
 ```
+
+## 🏃 快速开始
+```bash
+# 安装依赖
+pip install -r requirements.txt
+
+# 运行分析
+python main.py
+
+📈 输出成果
+自动化分析报告 (docs/ANALYSIS_REPORT.md)
+
+交互式数据看板 (outputs/dashboard.html)
+
+运营优化建议 (docs/INSIGHTS.md)
+```
+
+## 📁 项目依赖
+```txt
+pandas>=1.5.0
+numpy>=1.21.0
+plotly>=5.10.0
+matplotlib>=3.5.0
+sqlalchemy>=1.4.0
+scipy>=1.7.0
+python-dateutil>=2.8.0
