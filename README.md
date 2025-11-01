@@ -16,3 +16,33 @@
 - SQLite (数据存储)
 
 ## 📁 项目结构
+```
+logistics-analytics/
+├── src/
+│   ├── data_processing/
+│   │   ├── data_loader.py
+│   │   ├── data_cleaner.py
+│   │   └── feature_engineer.py
+│   ├── analysis/
+│   │   ├── cost_analysis.py
+│   │   ├── delivery_performance.py
+│   │   └── regional_analysis.py
+│   ├── visualization/
+│   │   ├── charts_generator.py
+│   │   └── dashboard.py
+│   └── utils/
+│       ├── config.py
+│       └── helpers.py
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── external/
+├── docs/
+│   ├── ANALYSIS_REPORT.md
+│   ├── METHODOLOGY.md
+│   └── INSIGHTS.md
+├── tests/
+├── requirements.txt
+├── main.py
+└── README.md
+```
