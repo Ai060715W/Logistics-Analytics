@@ -17,7 +17,7 @@
 
 ## 📁 项目结构
 ```
-logistics-analytics/
+Logistics-Analytics/
 ├── src/
 │   ├── data_processing/
 │   │   ├── data_loader.py
@@ -27,23 +27,27 @@ logistics-analytics/
 │   │   ├── cost_analysis.py
 │   │   ├── delivery_performance.py
 │   │   └── regional_analysis.py
-│   ├── visualization/
-│   │   ├── charts_generator.py
-│   │   └── dashboard.py
-│   └── utils/
-│       ├── config.py
-│       └── helpers.py
 ├── data/
 │   ├── raw/
+│   │   ├── 1.csv
+│   │   ├── 2.csv
+│   │   └── 3.csv
+│   │  
 │   ├── processed/
-│   └── external/
+│   │   ├── 1_clean.csv
+│   │   ├── 2_clean.csv
+│   │   └── 3_clean.csv
 ├── docs/
 │   ├── ANALYSIS_REPORT.md
-│   ├── METHODOLOGY.md
 │   └── INSIGHTS.md
-├── tests/
+├── outputs/
+│   ├── price_bar.png
+│   ├── price_donut.png
+│   ├── price_hist.png
+│   └── price_pie.png
 ├── requirements.txt
 ├── main.py
+├── clean_and_save.py
 └── README.md
 ```
 
