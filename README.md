@@ -24,7 +24,6 @@ Logistics-Analytics/
 │   ├── analysis/
 │   │   ├── cost_analysis.py      # 成本分析模块，实现价格趋势分析和图表生成
 │   │   ├── dashboard_generator.py # 交互式看板生成模块，创建可视化数据面板
-│   │   ├── delivery_performance.py # 绩效评估模块（待实现）
 │   │   └── regional_analysis.py  # 区域分析模块，提供基础区域统计功能
 ├── data/
 │   ├── raw/
