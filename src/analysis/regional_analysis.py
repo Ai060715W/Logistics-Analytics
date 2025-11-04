@@ -1,19 +1,7 @@
 """regional_analysis.py
 
-Regional/geo analysis helpers (placeholder).
+Regional analysis module providing geo-based insights.
 """
-
-
-def region_summary(data):
-    """Produce region-level summary statistics.
-
-    Args:
-        data: input data
-
-    Raises:
-        NotImplementedError
-    """
-    raise NotImplementedError("Implement regional analysis")
 
 
 def analyze_order_distribution(data):
@@ -39,13 +27,3 @@ def generate_region_efficiency_heatmap(data):
     plt.savefig('outputs/region_efficiency_heatmap.png')
     plt.close()
     return 'outputs/region_efficiency_heatmap.png'
-
-
-def industry_insight_analysis(data):
-    """行业洞察分析。"""
-    raise NotImplementedError("实现行业洞察分析")
-
-
-def competitor_research(data):
-    """竞品调研分析。"""
-    raise NotImplementedError("实现竞品调研分析")
