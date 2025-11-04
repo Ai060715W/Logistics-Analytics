@@ -1,5 +1,4 @@
 import plotly.graph_objects as go
-import plotly.express as px
 from plotly.subplots import make_subplots
 import pandas as pd
 import os
@@ -213,28 +212,7 @@ class DashboardGenerator:
         fig.write_html(self.dashboard_path, include_plotlyjs=True, full_html=True)
         return self.dashboard_path
 
-    def create_summary_statistics(self, df):
-        """创建统计摘要表格"""
-        stats = {
-            '统计指标': ['数据总量', '平均价格', '最高价格', '最低价格', '价格标准差'],
-            '数值': [
-                len(df),
-                round(df['价格数值'].mean(), 2),
-                round(df['价格数值'].max(), 2),
-                round(df['价格数值'].min(), 2),
-                round(df['价格数值'].std(), 2)
-            ]
-        }
-        
-        if '环比' in df.columns:
-            pct_data = df['环比'].astype(str).str.replace('%', '').astype(float)
-            stats['统计指标'].extend(['平均环比', '环比标准差'])
-            stats['数值'].extend([
-                round(pct_data.mean(), 2),
-                round(pct_data.std(), 2)
-            ])
-        
-        return stats
+
 
 def generate_dashboard(df, output_path='outputs/dashboard.html'):
     """生成交互式数据看板的便捷函数"""
