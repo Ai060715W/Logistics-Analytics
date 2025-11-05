@@ -116,3 +116,15 @@ matplotlib>=3.5.0
 # 时间日期处理
 python-dateutil>=2.8.0
 ```
+## 🤝 贡献
+欢迎通过以下方式参与贡献：
+- 提交 Issue 报告问题
+- 提交 Pull Request 改进功能
+- 优化算法、文档或可视化效果
+
+## 📜 License
+本项目采用 MIT License — 详情见 [LICENSE](LICENSE) 文件。
+
+## 👨‍💻 作者
+Author: Ai060715W
+📫 GitHub: [@Ai060715W](https://github.com/Ai060715W)
