@@ -1,17 +1,30 @@
-# LogiInsight - 物流运营智能分析平台
+# LogiInsight - 智能物流数据分析平台
 
 ## 📊 项目概述
-基于真实物流业务场景的数据分析系统，提供端到端的物流运营洞察和优化建议。
+🚚 一个端到端的物流数据分析与可视化项目，
+从原始业务数据出发，自动完成清洗、特征构建、成本与效率分析，
+并生成可交互仪表板与运营优化建议报告。
 
-## 🚀 功能特性
-- **成本分析**: 仓储、干线、配送各环节成本拆解
-- **自动化报告**: 一键生成业务洞察报告
+## 📦 项目背景
+在现代物流运营中，如何通过数据驱动来优化运输成本、提升配送效率，是企业竞争力的关键。
+Logistics-Analytics 致力于构建一个自动化的数据分析流程，从原始业务数据出发，快速获得可执行的运营洞察。
+
+## 🚀 主要功能  
+- 📊 **成本分析**：按仓储、干线、末端配送等维度拆解成本结构  
+- 📍 **区域表现分析**：比较不同区域的运输效率与盈利情况  
+- 🧹 **数据清洗与特征工程**：自动处理缺失值、异常值与指标标准化  
+- 📈 **可视化仪表板**：基于 Plotly 生成交互式运营看板（`outputs/dashboard.html`）  
+- 📑 **报告与洞察输出**：自动生成报告文档（`docs/ANALYSIS_REPORT.md`、`docs/INSIGHTS.md`）  
+- 🔁 **模块化分析流程**：从数据导入 → 清洗 → 分析 → 输出的完整自动化管线  
 
 ## 🛠 技术栈
-- Python 3.8+
-- Pandas, NumPy (数据处理)
-- Plotly, Matplotlib (可视化)
-- SQLite (数据存储)
+| 类别 | 工具 / 框架 |
+|------|--------------|
+| 语言 | Python 3.8+ |
+| 数据处理 | Pandas, NumPy |
+| 可视化 | Matplotlib, Plotly |
+| 存储 | CSV |
+| 其他 | OS, Logging, argparse |
 
 ## 📁 项目结构
 ```
@@ -50,21 +63,30 @@ Logistics-Analytics/
 └── README.md                     # 项目说明文档
 ```
 
-## 🏃 快速开始
+## ⚙️ 快速开始  
+
+### 1️⃣ 克隆项目  
 ```bash
-# 安装依赖
+git clone https://github.com/Ai060715W/Logistics-Analytics.git
+cd Logistics-Analytics
+
+### 2️⃣安装依赖
+```bash
 pip install -r requirements.txt
 
-# 运行分析
+### 3️⃣运行主程序
+```bash
 python main.py
-
-📈 输出成果
-自动化分析报告 (docs/ANALYSIS_REPORT.md)
-
-交互式数据看板 (outputs/dashboard.html)
-
-运营优化建议 (docs/INSIGHTS.md)
 ```
+### 4️⃣查看结果
+•	分析报告：docs/ANALYSIS_REPORT.md
+•	洞察建议：docs/INSIGHTS.md
+•	可视化仪表板：outputs/dashboard.html
+•	图表输出：outputs/charts/
+
+## 📂 数据说明
+•	输入数据：放置于 data/raw/ 目录下（CSV 格式）
+•	输出数据：程序运行后自动生成 data/processed/
 
 ## 📁 项目依赖
 ```txt
