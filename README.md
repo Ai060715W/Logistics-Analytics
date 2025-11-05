@@ -63,30 +63,32 @@ Logistics-Analytics/
 └── README.md                     # 项目说明文档
 ```
 
-## ⚙️ 快速开始  
+## ⚙️ 快速开始
 
-### 1️⃣ 克隆项目  
-```bash
-git clone https://github.com/Ai060715W/Logistics-Analytics.git
+1️⃣克隆项目
+git clone https://github.com/Ai060715W/Logistics-Analytics
 cd Logistics-Analytics
-
-### 2️⃣安装依赖
-```bash
+2️⃣安装依赖
 pip install -r requirements.txt
-
-### 3️⃣运行主程序
-```bash
+3️⃣运行主程序
 python main.py
-```
-### 4️⃣查看结果
-•	分析报告：docs/ANALYSIS_REPORT.md
-•	洞察建议：docs/INSIGHTS.md
-•	可视化仪表板：outputs/dashboard.html
-•	图表输出：outputs/charts/
+4️⃣查看结果
 
-## 📂 数据说明
-•	输入数据：放置于 data/raw/ 目录下（CSV 格式）
-•	输出数据：程序运行后自动生成 data/processed/
+	•	分析报告：docs/ANALYSIS_REPORT.md
+
+	•	洞察建议：docs/INSIGHTS.md
+
+	•	可视化仪表板：outputs/dashboard.html
+
+	•	图表输出：outputs/charts/
+
+数据说明
+
+	•	输入数据：放置于 data/raw/ 目录下（CSV格式）
+
+	•	输出数据：程序运行后自动生成 data/processed/
+
+我可以帮你补充一份项目结构的Markdown说明吗？方便你直接添加到GitHub文档里。
 
 ## 📁 项目依赖
 ```txt
