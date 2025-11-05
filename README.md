@@ -102,7 +102,7 @@ python main.py
 | 日期 | `date` | date | `2025-10-15` | 数据记录日期 |
 | 价格数值 | `price_value` | float | `560.75` | 价格的数值化字段（用于计算与可视化） |
 
-## 📁 项目依赖
+## 🗂️ 项目依赖
 ```txt
 # 数据处理与计算
 pandas>=1.5.0
@@ -122,7 +122,7 @@ python-dateutil>=2.8.0
 - 提交 Pull Request 改进功能
 - 优化算法、文档或可视化效果
 
-## 📜 License
+## 📑 License
 本项目采用 MIT License — 详情见 [LICENSE](LICENSE) 文件。
 
 ## 👨‍💻 作者
