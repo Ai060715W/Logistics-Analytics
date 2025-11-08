@@ -5,9 +5,13 @@
 从原始业务数据出发，自动完成清洗、特征构建、成本与效率分析，
 并生成可交互仪表板与运营优化建议报告。
 
+---
+
 ## 📦 项目背景
 在现代物流运营中，如何通过数据驱动来优化运输成本、提升配送效率，是企业竞争力的关键。
 Logistics-Analytics 致力于构建一个自动化的数据分析流程，从原始业务数据出发，快速获得可执行的运营洞察。
+
+---
 
 ## 🚀 主要功能  
 - 📊 **成本分析**：按仓储、干线、末端配送等维度拆解成本结构  
@@ -17,6 +21,8 @@ Logistics-Analytics 致力于构建一个自动化的数据分析流程，从原
 - 📑 **报告与洞察输出**：自动生成报告文档（`docs/ANALYSIS_REPORT.md`、`docs/INSIGHTS.md`）  
 - 🔁 **模块化分析流程**：从数据导入 → 清洗 → 分析 → 输出的完整自动化管线  
 
+---
+
 ## 🛠 技术栈
 | 类别 | 工具 / 框架 |
 |------|--------------|
@@ -25,6 +31,8 @@ Logistics-Analytics 致力于构建一个自动化的数据分析流程，从原
 | 可视化 | Matplotlib, Plotly |
 | 存储 | CSV |
 | 其他 | OS, Logging, argparse |
+
+---
 
 ## 📁 项目结构
 ```
@@ -63,6 +71,8 @@ Logistics-Analytics/
 └── README.md                     # 项目说明文档
 ```
 
+---
+
 ## ⚙️ 快速开始
 
 ### 1️⃣ 克隆项目
@@ -87,9 +97,13 @@ python main.py
 - 可视化仪表板：`outputs/dashboard.html`
 - 图表输出：`outputs/charts/`
 
+---
+
 ## 📊 数据说明
 - 输入数据：放置于 `data/raw/` 目录下（CSV格式）
 - 输出数据：程序运行后自动生成 `data/processed/`
+
+---
 
 ## 📝 字段示例  
 
@@ -101,6 +115,8 @@ python main.py
 | 环比 | `month_over_month` | float | `+3.8%` | 与上月相比的价格变化百分比 |
 | 日期 | `date` | date | `2025-10-15` | 数据记录日期 |
 | 价格数值 | `price_value` | float | `560.75` | 价格的数值化字段（用于计算与可视化） |
+
+---
 
 ## 🗂️ 项目依赖
 ```txt
@@ -116,15 +132,22 @@ matplotlib>=3.5.0
 # 时间日期处理
 python-dateutil>=2.8.0
 ```
+---
+
 ## 🤝 贡献
 欢迎通过以下方式参与贡献：
 - 提交 Issue 报告问题
 - 提交 Pull Request 改进功能
 - 优化算法、文档或可视化效果
 
+---
+
 ## 📑 License
 本项目采用 MIT License — 详情见 [LICENSE](LICENSE) 文件。
+
+---
 
 ## 👨‍💻 作者
 Author: Ai060715W
 📫 GitHub: [@Ai060715W](https://github.com/Ai060715W)
+---
