@@ -223,3 +223,43 @@ def generate_optimization_suggestions(costs):
     if not suggestions:
         suggestions.append('各环节成本合理，无需优化。')
     return suggestions
+
+def generate_operational_insights(df):
+    """根据数据生成运营洞察"""
+    insights = []
+    if '价格数值' in df.columns:
+        avg_price = df['价格数值'].mean()
+        if avg_price > 1000:
+            insights.append("平均价格较高，表明部分线路存在潜在议价空间。")
+        else:
+            insights.append("整体价格水平合理，维持当前运输策略。")
+    if '路线' in df.columns:
+        top_routes = df['路线'].value_counts().head(3).index.tolist()
+        insights.append(f"高频运输路线包括：{', '.join(top_routes)}。")
+    insights.append("建议持续监控价格波动与区域差异，优化运输组合。")
+    return insights
+
+
+def generate_risk_assessment(df):
+    """生成风险评估洞察"""
+    risks = []
+    if '环比' in df.columns:
+        pct = df['环比'].astype(str).str.replace('%', '').astype(float)
+        high_volatility = (pct.abs() > 10).mean()
+        if high_volatility > 0.3:
+            risks.append("价格波动显著，短期存在运输成本上升风险。")
+        else:
+            risks.append("价格波动较小，运输成本稳定。")
+    else:
+        risks.append("数据缺少环比字段，无法评估价格波动风险。")
+    risks.append("需关注燃油价格及政策调整带来的潜在影响。")
+    return risks
+
+
+def generate_strategy_suggestions(df):
+    """生成策略建议"""
+    strategies = []
+    strategies.append("建立运输价格监控系统，实现动态调价。")
+    strategies.append("与核心干线承运商建立长期合作关系，稳定价格。")
+    strategies.append("探索多式联运或区域整合，提升整体运输效率。")
+    return strategies
