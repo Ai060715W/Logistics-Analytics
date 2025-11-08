@@ -95,18 +95,18 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### 4️⃣ 查看结果
-- 分析报告：`docs/ANALYSIS_REPORT.md`
-- 洞察建议：`docs/INSIGHTS.md`
-- 可视化仪表板：`dashboard.html`
-- 图表输出：`outputs/charts/`
-
-### 5️⃣ 安装 Live Server 插件
+### 4️⃣ 安装 Live Server 插件
 
 - 打开 VS Code
 - 左侧点击 扩展（Extensions） 图标
 - 搜索 Live Server
 - 安装 Ritwick Dey 的版本
+
+### 5️⃣ 查看结果
+- 分析报告：`docs/ANALYSIS_REPORT.md`
+- 洞察建议：`docs/INSIGHTS.md`
+- 可视化仪表板：`dashboard.html`
+- 图表输出：`outputs/charts/`
 
 ---
 
