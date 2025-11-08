@@ -26,7 +26,7 @@ Logistics-Analytics 致力于构建一个自动化的数据分析流程，从原
 ## 🛠 技术栈
 | 类别 | 工具 / 框架 |
 |------|--------------|
-| 语言 | Python 3.8+ |
+| 语言 | Python 3.8+，CSS3，HTML5，JavaScript (ES6) |
 | 数据处理 | Pandas, NumPy |
 | 可视化 | Matplotlib, Plotly |
 | 存储 | CSV |
@@ -39,13 +39,13 @@ Logistics-Analytics 致力于构建一个自动化的数据分析流程，从原
 Logistics-Analytics/
 ├── src/
 │   ├── data_processing/
-│   │   ├── data_loader.py        # 数据加载模块，负责从CSV文件读取原始数据
-│   │   ├── data_cleaner.py       # 数据清洗模块，处理数据缺失、异常值等
-│   │   └── feature_engineer.py   # 特征工程模块，提取和创建分析所需特征
+│   │   ├── data_loader.py         # 数据加载模块，负责从CSV文件读取原始数据
+│   │   ├── data_cleaner.py        # 数据清洗模块，处理数据缺失、异常值等
+│   │   └── feature_engineer.py    # 特征工程模块，提取和创建分析所需特征
 │   ├── analysis/
-│   │   ├── cost_analysis.py      # 成本分析模块，实现价格趋势分析和图表生成
+│   │   ├── cost_analysis.py       # 成本分析模块，实现价格趋势分析和图表生成
 │   │   ├── dashboard_generator.py # 交互式看板生成模块，创建可视化数据面板
-│   │   └── regional_analysis.py  # 区域分析模块，提供基础区域统计功能
+│   │   └── regional_analysis.py   # 区域分析模块，提供基础区域统计功能
 ├── data/
 │   ├── raw/
 │   │   ├── 1.csv
@@ -57,18 +57,22 @@ Logistics-Analytics/
 │   │   ├── 2_clean.csv
 │   │   └── 3_clean.csv
 ├── docs/
-│   ├── ANALYSIS_REPORT.md        # 生成的分析报告文档
-│   └── INSIGHTS.md               # 运营洞察和优化建议文档
+│   ├── ANALYSIS_REPORT.md         # 生成的分析报告文档
+│   └── INSIGHTS.md                # 运营洞察和优化建议文档
 ├── outputs/
-│   ├── dashboard.html            # 交互式数据可视化看板
-│   ├── price_bar.png             # 价格柱状图可视化结果
-│   ├── price_donut.png           # 价格环形图可视化结果
-│   ├── price_hist.png            # 价格直方图可视化结果
-│   └── price_pie.png             # 价格饼图可视化结果
-├── requirements.txt              # 项目依赖包配置文件
-├── main.py                       # 项目主入口，协调各模块执行数据分析流程
-├── clean_and_save.py             # 数据清洗与保存脚本
-└── README.md                     # 项目说明文档
+│   ├── price_bar.png              # 价格柱状图可视化结果
+│   ├── price_donut.png            # 价格环形图可视化结果
+│   ├── price_hist.png             # 价格直方图可视化结果
+│   └── price_pie.png              # 价格饼图可视化结果
+├── static
+│   ├── dashboard.js               # 主逻辑脚本：负责读取数据、处理数据与绘制 Plotly 图表
+│   ├── plotly-2.30.0.min.js       # Plotly.js 可视化库（离线版），主要用于绘制交互式图表（可缩放、悬浮提示、导出图像）
+│   └── style.css                  # 负责仪表板布局（如网格、卡片阴影、边框、背景）
+├── requirements.txt               # 项目依赖包配置文件
+├── main.py                        # 项目主入口，协调各模块执行数据分析流程
+├── clean_and_save.py              # 数据清洗与保存脚本
+├── dashboard.html                 # 交互式数据可视化看板
+└── README.md                      # 项目说明文档
 ```
 
 ---
@@ -94,8 +98,15 @@ python main.py
 ### 4️⃣ 查看结果
 - 分析报告：`docs/ANALYSIS_REPORT.md`
 - 洞察建议：`docs/INSIGHTS.md`
-- 可视化仪表板：`outputs/dashboard.html`
+- 可视化仪表板：`dashboard.html`
 - 图表输出：`outputs/charts/`
+
+### 5️⃣ 安装 Live Server 插件
+
+- 打开 VS Code
+- 左侧点击 扩展（Extensions） 图标
+- 搜索 Live Server
+- 安装 Ritwick Dey 的版本
 
 ---
 
