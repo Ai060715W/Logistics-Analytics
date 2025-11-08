@@ -105,8 +105,10 @@ python main.py
 ### 5️⃣ 查看结果
 - 分析报告：`docs/ANALYSIS_REPORT.md`
 - 洞察建议：`docs/INSIGHTS.md`
-- 可视化仪表板：`dashboard.html`
 - 图表输出：`outputs/charts/`
+- 可视化仪表板：`dashboard.html`
+  打开 `dashboard.html`文件  
+  右键选择**“Open with Live Server”** 或点击右下角**“Go Live”**按钮
 
 ---
 
