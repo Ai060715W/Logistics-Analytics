@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>物流价格分析交互式看板</title>
+
+  <!-- 本地 Plotly v2.x -->
+  <script src="./static/plotly-2.30.0.min.js"></script>
+
+  <!-- 样式 -->
+  <link rel="stylesheet" href="./static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="title">
+        <span class="emoji">🚛</span>
+        <div>
+          <h1>物流价格分析交互式看板</h1>
+          <p class="subtitle">多路线、多指标对比 · 离线运行版</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <label>路线:
+          <select id="route-select">
+            <option value="__all__">全部</option>
+          </select>
+        </label>
+
+        <label>指标:
+          <select id="metric-select">
+            <option value="price">价格（数值）</option>
+            <option value="ratio">环比（%）</option>
+          </select>
+        </label>
+
+        <div class="update" id="update-time">--</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="cards">
+      <div class="card meta">
+        <h3>数据来源</h3>
+        <p>data/processed/1_clean.csv, 2_clean.csv, 3_clean.csv</p>
+      </div>
+      <div class="card meta">
+        <h3>分析维度</h3>
+        <p>路线、日期、价格、环比</p>
+      </div>
+      <div class="card meta">
+        <h3>说明</h3>
+        <p>选择路线或全部查看汇总趋势；支持离线运行。</p>
+      </div>
+    </section>
+
+    <section class="charts-grid">
+      <div class="chart-card">
+        <h4>不同路线均价对比</h4>
+        <div id="chart-route-bar" class="chart"></div>
+      </div>
+      <div class="chart-card">
+        <h4>不同路线价格占比</h4>
+        <div id="chart-pie" class="chart"></div>
+      </div>
+      <div class="chart-card">
+        <h4>月份聚合订单量与平均价格</h4>
+        <div id="chart-trend" class="chart"></div>
+      </div>
+      <div class="chart-card">
+        <h4>环比涨跌分析</h4>
+        <div id="chart-ratio" class="chart"></div>
+      </div>
+      <div class="chart-card">
+        <h4>价格分布直方图</h4>
+        <div id="chart-hist" class="chart"></div>
+      </div>
+      <div class="chart-card">
+        <h4>价格波动热力图</h4>
+        <div id="chart-heat" class="chart"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2025 Logistics Analytics</div>
+  </footer>
+
+  <script src="./static/dashboard.js"></script>
+</body>
+</html>

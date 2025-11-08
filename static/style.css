@@ -1,0 +1,75 @@
+:root {
+  --primary:#0d6efd;
+  --bg:#f6f9fc;
+  --card:#fff;
+  --muted:#6b7280;
+}
+
+body {
+  margin:0;
+  background:var(--bg);
+  font-family:"Segoe UI","PingFang SC","Helvetica Neue",Arial;
+  color:#111827;
+}
+
+.container {
+  max-width:1280px;
+  margin:0 auto;
+  padding:20px;
+}
+
+/* 顶部栏 */
+.topbar {
+  background:linear-gradient(90deg,var(--primary),#00aaff);
+  color:#fff;
+  padding:22px 0;
+  box-shadow:0 2px 12px rgba(12,35,95,0.12);
+}
+.topbar .container {
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+}
+.title { display:flex;align-items:center;gap:10px; }
+.title .emoji { font-size:40px; }
+.title h1 { margin:0;font-size:20px; }
+.subtitle { font-size:12px;margin:0;opacity:0.9; }
+
+.controls { display:flex;align-items:center;gap:12px; }
+.controls select {
+  margin-left:8px;padding:6px 8px;border-radius:6px;
+  background:rgba(255,255,255,0.1);color:#fff;border:none;
+}
+.update { font-size:12px;color:rgba(255,255,255,0.9); }
+
+/* 卡片与图表 */
+.main-grid { display:grid;grid-template-rows:auto 1fr;gap:18px; }
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
+}
+.card.meta {
+  background:var(--card);padding:16px;border-radius:10px;
+  box-shadow:0 6px 18px rgba(12,35,95,0.06);
+}
+.card.meta h3 { margin:0 0 8px;color:var(--primary); }
+.card.meta p { margin:0;color:var(--muted);font-size:13px; }
+
+.charts-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+  gap:18px;
+}
+.chart-card {
+  background:var(--card);padding:12px;border-radius:10px;
+  box-shadow:0 6px 20px rgba(12,35,95,0.06);
+  border:1px solid #e5e7eb;
+  transition:all .25s ease;
+}
+.chart-card:hover {
+  transform:translateY(-4px);
+  box-shadow:0 10px 24px rgba(0,0,0,0.08);
+}
+.chart-card h4 { margin:6px 0 10px;color:var(--primary);font-weight:600; }
+.chart { height:420px; }
+
+.footer { text-align:center;padding:16px 0;color:var(--muted);font-size:13px; }
