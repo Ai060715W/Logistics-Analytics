@@ -44,7 +44,6 @@ Logistics-Analytics/
 │   │   └── feature_engineer.py    # 特征工程模块，提取和创建分析所需特征
 │   ├── analysis/
 │   │   ├── cost_analysis.py       # 成本分析模块，实现价格趋势分析和图表生成
-│   │   ├── dashboard_generator.py # 交互式看板生成模块，创建可视化数据面板
 │   │   └── regional_analysis.py   # 区域分析模块，提供基础区域统计功能
 ├── data/
 │   ├── raw/
@@ -70,7 +69,6 @@ Logistics-Analytics/
 │   └── style.css                  # 负责仪表板布局（如网格、卡片阴影、边框、背景）
 ├── requirements.txt               # 项目依赖包配置文件
 ├── main.py                        # 项目主入口，协调各模块执行数据分析流程
-├── clean_and_save.py              # 数据清洗与保存脚本
 ├── dashboard.html                 # 交互式数据可视化看板
 └── README.md                      # 项目说明文档
 ```
